@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/minibank/static/css/main.a0055242.css",
-    "main.js": "/minibank/static/js/main.48ac6f50.js",
+    "main.js": "/minibank/static/js/main.29c8cfe2.js",
     "index.html": "/minibank/index.html",
     "main.a0055242.css.map": "/minibank/static/css/main.a0055242.css.map",
-    "main.48ac6f50.js.map": "/minibank/static/js/main.48ac6f50.js.map"
+    "main.29c8cfe2.js.map": "/minibank/static/js/main.29c8cfe2.js.map"
   },
   "entrypoints": [
     "static/css/main.a0055242.css",
-    "static/js/main.48ac6f50.js"
+    "static/js/main.29c8cfe2.js"
   ]
 }
