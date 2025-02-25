@@ -14,7 +14,7 @@ const Account = () => {
     if (res) {
       setstatus(res.message);
       setTimeout(() => {
-        navigate("/");
+        navigate("/minibank");
       }, 1500);
     }
     if (res) {

@@ -57,36 +57,35 @@ const HomePage = () => {
   ) : (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 pt-20 px-4 sm:px-6 lg:px-8">
       <UserMenu />
-     <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-center ">
-
+      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-center ">
         <h1 className="text-2xl font-bold text-gray-800">
           Welcome to Mini Bank
         </h1>
         <p className="text-gray-600 mt-2">
           Manage your account, transactions, and balance easily.
         </p>
-{/* deposit button */}
-        <div className="mt-6 space-y-4 w-full max-w-md mx-auto text-center">
+        {/* deposit button */}
+        <div className="mt-6  space-y-4 w-full max-w-md mx-auto text-center">
           <div
             onClick={(e) => {
               e.preventDefault(),
                 document.getElementById("deposit").showModal();
             }}
-            className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl shadow-lg w-full"
+            className="flex cursor-pointer items-center justify-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl shadow-lg w-full"
           >
             <FaMoneyBillWave className="mr-2 text-lg" /> Deposit
           </div>
-{/* withdraw button */}
+          {/* withdraw button */}
           <div
             onClick={(e) => {
               e.preventDefault(),
                 document.getElementById("withdraw").showModal();
             }}
-            className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-xl shadow-lg w-full"
+            className="flex cursor-pointer items-center justify-center bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-xl shadow-lg w-full"
           >
             <FaWallet className="mr-2 text-lg" /> Withdraw
           </div>
-{/* check balance button */}
+          {/* check balance button */}
           <div
             onClick={async (e) => {
               e.preventDefault();
@@ -96,11 +95,11 @@ const HomePage = () => {
                 document.getElementById("balance").showModal();
               }
             }}
-            className="flex items-center justify-center bg-gray-700 hover:bg-gray-800 text-white py-3 px-6 rounded-xl shadow-lg w-full"
+            className="flex  cursor-pointer items-center justify-center bg-gray-700 hover:bg-gray-800 text-white py-3 px-6 rounded-xl shadow-lg w-full"
           >
             <FaBalanceScale className="mr-2 text-lg" /> Check Balance
           </div>
-  {/* transaction history button */}
+          {/* transaction history button */}
           <div
             onClick={async (e) => {
               e.preventDefault();
@@ -110,16 +109,15 @@ const HomePage = () => {
                 document.getElementById("transactions").showModal();
               }
             }}
-            className="flex items-center justify-center bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-xl shadow-lg w-full"
+            className="flex cursor-pointer items-center justify-center bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-xl shadow-lg w-full"
           >
             <FaHistory className="mr-2 text-lg" /> Transaction History
           </div>
-
         </div>
       </div>
-{/* dialogboxxes */}
+      {/* dialogboxxes */}
 
-{/* deposit */}
+      {/* deposit */}
       <dialog id="deposit" className="modal">
         <div className="modal-box w-11/12 max-w-md p-6 rounded-lg shadow-lg">
           <h3 className="font-bold text-xl text-center text-gray-800">
@@ -181,7 +179,7 @@ const HomePage = () => {
           </div>
         </div>
       </dialog>
-{/* withdraw */}
+      {/* withdraw */}
 
       <dialog id="withdraw" className="modal">
         <div className="modal-box w-11/12 max-w-md p-6 rounded-lg shadow-lg">
@@ -243,7 +241,7 @@ const HomePage = () => {
           </div>
         </div>
       </dialog>
-{/* balance */}
+      {/* balance */}
       <dialog id="balance" className="modal">
         <div className="modal-box w-11/12 max-w-md p-6 rounded-lg shadow-lg">
           <h3 className="font-bold text-xl text-center text-gray-800">
@@ -268,7 +266,7 @@ const HomePage = () => {
           </div>
         </div>
       </dialog>
-{/* transactions */}
+      {/* transactions */}
       <dialog id="transactions" className="modal">
         <div className="modal-box w-11/12 max-w-md p-6 rounded-lg shadow-lg">
           <h3 className="font-bold text-xl text-center text-gray-800">
@@ -321,7 +319,6 @@ const HomePage = () => {
           </div>
         </div>
       </dialog>
-      
     </div>
   );
 };
